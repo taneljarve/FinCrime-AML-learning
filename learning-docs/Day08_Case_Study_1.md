@@ -122,8 +122,28 @@ Real cases don't have single definitive answers. You need to weigh evidence.
 **Validation:**  
 Your analysis should show you recognize: (1) April-May growth was consistent with business logic, (2) June represents a **sharp departure** into pass-through behavior, (3) Explanations don't match activity, (4) Missing documentation = red flag.
 
-**Hint:**  
-The key insight: April-May growth is realistic. June activity contradicts the established pattern. Something changed.
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Timeline Assessment:**
+April-May growth was gradual and consistent (+/- $500 month-to-month) with reasonable business logic (seasonal growth for a tech services company). June represents a **sharp departure**—volume jumping 2-3x with a new entity (CloudSync LLC) and suddenly high-velocity personal account transfers. The transition is not gradual; it's sudden.
+
+**3-5 Red Flags in June Activity:**
+1. **New Entity Source:** CloudSync LLC appears ONLY in June (never before). Combined with high amount + high velocity = potential money placement
+2. **Pass-Through Pattern:** Funds arrive from CloudSync, immediately split to personal accounts (high velocity, <24 hours). Classic layering.
+3. **Missing Documentation:** Large tech services invoices for CloudSync ($35k) lack detail. Real B2B invoices include itemized services, dates, etc.
+4. **Personal Account Transfers:** Tech business shouldn't pay personal accounts. This contradicts established profile (all previous transfers were business entities).
+5. **Explanation Doesn't Match Activity:** Priya says "Friends' business partnerships" but no documented partnerships exist. Generic explanation for suspicious behavior.
+
+**2-3 Green Flags:**
+1. April-May demonstrated consistent business growth (plausible for growing tech company)
+2. Not an account just opened yesterday—has 4+ months of history
+3. Priya can articulate an explanation (even if weak)
+
+**The Ambiguity - Why Pattern Change Indicates Fraud:**
+The established baseline was: consistent B2B tech services income, sent to business vendors/expenses, 1-2 week retention, documented transactions. June reversal ALL of this: new entity source, personal account recipients, same-day retention, missing docs. In AML, sudden pattern changes without logical business explanation = red flag. Criminals operate differently than legitimate businesses; this looks like someone suddenly shifted to movement-focused behavior (layering) after establishing a cover (April-May legitimacy).
+
+</details>
 
 ### TODO 2: Make a Decision
 **What to do:**  
@@ -151,8 +171,21 @@ OPTION B is most defensible. Here's why:
 **Why not A:** Too risky. June activity is suspicious despite growth signal.  
 **Why not C:** Not enough evidence YET. April-May were legitimate. Give her chance to explain.
 
-**Hint:**  
-When uncertain: More investigation > premature blocking. Better to delay 5 transactions than block a legitimate customer.
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**My Decision: OPTION B - ESCALATE for Enhanced Due Diligence**
+
+**Reasoning:**
+April-May activity demonstrates legitimate business growth, so complete blocking would be premature. However, June's sudden shift to pass-through behavior (new entity source, personal account distribution, missing documentation) is too suspicious to ignore. The pattern contradicts the established baseline without clear explanation. Before blocking a potentially legitimate business, I need Enhanced Due Diligence: document requests, entity verification, and direct questioning. If Priya can explain and provide documentation, this resolves. If not, we escalate to block/SAR filing. Option B balances caution with fairness.
+
+**Why Not Option A (Approve & Monitor):**
+Too risky. June activity meets multiple red flag criteria; "monitoring" without investigation means accepting risky activity into the system.
+
+**Why Not Option C (Block Immediately):**
+Insufficent evidence YET. April-May were legitimate. Without giving Priya a chance to respond and verify, we risk false positive (blocking legitimate business).
+
+</details>
 
 ### TODO 3: Write Your Investigation Plan
 **What to do:**  
@@ -173,8 +206,46 @@ Supervisors want to see you can investigate systematically. This shows your thin
 **Validation:**  
 Your plan should include: (1) Request invoices for June clients, (2) Verify CloudSync LLC is real, (3) Ask Priya for explanation of personal transfers, (4) Check if personal account recipients have connection to Priya, (5) Review if similar pattern in other accounts (group fraud?), etc.
 
-**Hint:**  
-Remember the Golden Source Rule. For CloudSync LLC, check: business registry, company registration, beneficial ownership. Don't trust what Priya says—verify independently.
+<details>
+<summary>💡 Example Investigation Plan (Click to reveal)</summary>
+
+**INVESTIGATION PLAN - FastTech Solutions**
+
+1. **Request Documentation (immediate):**
+   - Invoices/contracts for ALL CloudSync LLC projects (need itemized work descriptions, dates, amounts, payment terms)
+   - Documentation explaining personal account recipients (who are they? What's the business relationship?)
+   - Business registration of CloudSync LLC
+
+2. **Verify CloudSync LLC Independently (Golden Source Rule):**
+   - Search business registry for CloudSync (real company or shell?)
+   - Cross-check director/beneficial ownership (any connection to Priya?)
+   - Call CloudSync independently (does the company exist? Do they confirm working with FastTech?)
+
+3. **Interview Priya Directly:**
+   - Ask specific questions: "Can you describe the specific tech services you provided to CloudSync?"
+   - "Why were these transfers made to personal accounts rather than business bank accounts of vendors?"
+   - "Who are the individuals receiving the personal transfers?"
+   - Watch for inconsistency in her explanations
+
+4. **Analyze Personal Account Recipients:**
+   - Research the 5 personal accounts receiving funds (who are they? Where are they located?)
+   - Check if they have existing relationships to Priya or suspected money laundering
+   - Run them against OFAC/sanctions lists
+
+5. **Review Historical Pattern:**
+   - Pull last 12 months of FastTech transactions (does June behavior repeat? Or was it one-time?)
+   - Check if similar patterns exist in OTHER accounts at Wise under same business relationships
+
+6. **File Suspicious Activity Report (SAR) Threshold Analysis:**
+   - Calculate: Does the June activity reach SAR filing threshold ($10k+? Multiple red flags?)
+   - If yes, prepare SAR documentation immediately
+
+7. **Decision Timeline:**
+   - Give Priya 5 business days to provide documentation
+   - If documentation is credible and verifies, consider account recovered
+   - If documentation is weak/vague, escalate to SAR filing and account closure
+
+</details>
 
 ---
 
@@ -225,8 +296,56 @@ Depends on what documentation shows. If invoices support the $35k (real clients,
 - Document your reasoning so others can learn from your decision
 
 **Challenge Questions:**
-1. If you were wrong and Priya was actually legitimate, would you have felt worse blocking her or letting her through? (Think about which is worse: false positive or false negative?)
-2. How would you explain this decision to Priya if she asked why her account was being investigated?
+
+**Challenge 1: If you were wrong and Priya was actually legitimate, would you have felt worse blocking her or letting her through?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Honest Answer: Blocking a legitimate customer (false positive) is worse for business; letting a criminal through (false negative) is worse for compliance.**
+
+But in an interview context, here's the right answer:
+
+"I would feel worse letting a potential criminal through. Here's why:
+- A false negative (missing money laundering) could expose Wise to regulatory fines, licensing consequences, and legal liability
+- A false positive (blocking Priya) inconveniences her, but we can unblock quickly once verified
+- Our primary responsibility is compliance, not customer convenience
+
+However, I'd make sure false positives are kept to minimum by investigating thoroughly before blocking (which is why I chose ESCALATE not BLOCK). The goal is neither false positive nor false negative—it's correct decisions based on thorough investigation."
+
+**Interview Subtext:**
+They want to see you prioritize compliance over business convenience. But ALSO show you have judgment (don't block everything—investigate first).
+
+</details>
+
+**Challenge 2: How would you explain this decision to Priya if she asked why her account was being investigated?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Customer-Facing Communication (Professional & Clear):**
+
+"Hi Priya, thanks for asking. We conduct ongoing monitoring for all accounts as part of our regulatory compliance. Your account shows a pattern change in June that triggered our review: new counterparties, transfer patterns, and transaction types that differ from your established activity.
+
+This doesn't mean we suspect fraud—it means we need to understand the change. We're requesting documentation to verify the June activity:
+- Invoices or contracts for CloudSync LLC work
+- Explanation of the personal account transfers
+- Business registration of CloudSync LLC
+
+If you can provide documentation explaining the transactions, we expect to clear this up quickly. Our goal is protecting both you and Wise. Can you provide these documents within 5 business days?"
+
+**Why This Works:**
+- Non-accusatory ("pattern change" not "fraud detected")
+- Transparent about what we need and why
+- Sets clear timeline
+- Maintains customer relationship while protecting compliance
+
+**What NOT to Say:**
+- ❌ "We think you're money laundering"
+- ❌ "We're closing your account" (premature)
+- ❌ No explanation (leaves customer angry/defensive)
+
+</details>
 
 ---
 
