@@ -125,8 +125,20 @@ Day 12 of the interview will include "Tell me about a time you spotted something
 **Validation:**  
 Your story is real (not made up), shows YOU (not team), has a clear problem + solution, and demonstrates Wise value of "getting it done."
 
-**Hint:**  
-If it's from work, use that. If not, use school, volunteer, side project. ANY context where you caught something important works. The skill matters more than the setting.
+<details>
+<summary>💡 Example Story (Click to reveal)</summary>
+
+**SITUATION:** I was reviewing a routine account with 6 months of normal activity (freelancer, regular invoices, consistent vendors).
+
+**TASK:** I noticed the customer's April-May activity was normal, but in June received a $35k transfer from a new source ("CloudSync LLC") and immediately distributed $30k to 5 personal accounts (never done before). This pattern completely contradicted her baseline.
+
+**ACTION:** I didn't just flag it as "risky" and throw it to someone else. Instead, I: (1) Built a detailed comparison of April-May vs. June activity, (2) Called Wise's business registry team to verify if CloudSync was real (Golden Source Rule), (3) Found CloudSync had a nominee director managing 47 companies (red flag), (4) Escalated to my manager with clear evidence + recommendation for Enhanced Due Diligence, (5) Personally drafted the customer communication requesting documentation.
+
+**RESULT:** My thorough analysis caught what a quick review would have missed. We blocked the $30k distribution pending verification. Customer provided explanation (turned out to be legitimate expansion), but my attention to detail caught it first. Manager commended the analysis and asked me to audit other high-risk accounts using the same framework.
+
+**Why This Works:** Shows attention to detail (core compliance skill), initiative (you did research), and system thinking (verified independently).
+
+</details>
 
 ### TODO 2: Build Your STAR Story on Teamwork Under Pressure
 
@@ -164,8 +176,20 @@ Wise will ask: "How do you handle pressure?" This story shows you can stay calm 
 **Validation:**  
 Your story shows: (1) You stayed professional, (2) You communicated well, (3) You got results, (4) You reflect on what went well.
 
-**Hint:**  
-Don't bad-mouth your colleagues. Focus on YOUR actions and how you contributed to a good outcome. Wise wants humble, collaborative people.
+<details>
+<summary>💡 Example Story (Click to reveal)</summary>
+
+**SITUATION:** Our compliance team had to review 500 flagged transactions submitted by automated systems before month-end deadline (5pm today). We were short one analyst due to illness.
+
+**TASK:** Pressure was intense—500 transactions, 3 people normally, 2 people today, each transaction needing 10-15 min investigation. My colleague Sarah was frustrated ("this can't be done"), another colleague wanted to rush through ("flag everything as suspicious"). Everyone was stressed.
+
+**ACTION:** First, I stayed calm and said, "Let's prioritize, not panic." I suggested we (1) Sort transactions by risk: sanctions first (mandatory), then high-amount, then routine, (2) Divide the work: I took high-risk (most complex), Sarah took medium, colleague took routine, (3) Set milestones: 100 per hour, brief sync every 60 min to flag blockers. I also made coffee and said, "We've handled worse. Let's focus on quality, not speed." When Sarah hit a complex shell company case, I helped her work through Golden Source Rule verification without making her feel bad for asking.
+
+**RESULT:** We reviewed all 500 by 4:45pm with 0 errors (checked each other's work). Sarah later told me she appreciated how I didn't let panic take over. Manager realized this was efficient teamwork and adopted our prioritization strategy for future high-volume periods.
+
+**Why This Works:** Shows leadership (took charge without being bossy), collaboration (helped teammates), professionalism (stayed calm), AND got results (met deadline with quality).
+
+</details>
 
 ### TODO 3: Prepare Your "Why Wise?" Answer
 
@@ -207,8 +231,26 @@ This answer shows you're not just looking for any job. You've researched Wise an
 **Validation:**  
 Your answer mentions: mission, at least one value, why YOU specifically, how you'll contribute.
 
-**Hint:**  
-Go to https://wise.jobs/our-values again. Pick ONE value that genuinely resonates with you. Use that in your answer. Authenticity matters.
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+"I want to work at Wise because I believe financial access shouldn't depend on geography or bank account size. Your mission to revolutionize money transfer and help real people send money cheaply and fairly genuinely excites me.
+
+Your culture value of 'Customers > team > ego' especially resonates with me. I believe compliance work is fundamentally about protecting customers from fraud and criminals—not just checking boxes or blocking payments indiscriminately. It's about using data and judgment to make smart decisions that help people.
+
+In the FinCrime Investigator role, I want to develop expertise in AML investigation so I can become someone you trust to make judgment calls that protect your platform AND treat customers fairly. I believe the best compliance teams combine technical skill (pattern detection, data analysis) with empathy (understanding customer context).
+
+Honestly, the problem Wise is solving—making international money transfer faster, cheaper, and available to everyone—excites me. This is meaningful work. And your reputation for moving fast, trusting talented people, and staying focused on the mission is exactly the kind of team I want to join."
+
+**Why This Works:**
+- Shows you know Wise's mission (global money transfer revolution)
+- Mentions specific value ("Customers > team > ego") with why YOU align
+- Explains how FinCrime fits the mission (protecting customers)
+- Shows genuine excitement (not generic "I want to work here")
+- Mentions Wise's culture (fast-moving, trusted people, mission-focused)
+- Authentic tone (sounds like real you, not memorized script)
+
+</details>
 
 ---
 

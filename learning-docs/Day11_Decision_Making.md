@@ -143,8 +143,28 @@ Ranking:
 4. Alert 4 (Legitimate profile, low risk, quick verification)
 5. Alert 5 (Established account, documented growth, ongoing monitor)
 
-**Hint:**  
-Think: Non-negotiable (sanctions) > Customer protection > High $ + High risk > Routine checks. Your job is to spend time on cases that matter most.
+<details>
+<summary>💡 Example Ranking (Click to reveal)</summary>
+
+**Priority 1 (CRITICAL): Alert 1 (Iran Transfer)**
+Iran is a sanctioned jurisdiction; ANY transfer there is legal non-negotiable. This must be blocked immediately + reported. Sanctions violations carry $1M+ fines.
+
+**Priority 2 (URGENT): Alert 3 (Mohammad Takeover)**
+Elderly customer losing pension in real-time. Customer is victim and needs immediate protection. Every hour = more loss. Freeze account + contact customer immediately.
+
+**Priority 3 (HIGH): Alert 2 (Bulk Order - Unknown Vendor)**
+$200k from new vendor + missing documentation = suspicious. High dollar + high risk = deep investigation needed. Can't do today (2-3 hours), but schedule for afternoon/tomorrow.
+
+**Priority 4 (MEDIUM): Alert 4 (New Freelancer)**
+New account but 3 legitimate transfers that match profile. Green flags present. Quick 20-minute verification sufficient. Low risk = can wait. 
+
+**Priority 5 (LOW): Alert 5 (Seasonal Spike)**
+Documented business growth, legitimate explanation, established account. Ongoing monitoring sufficient.
+
+**Decision Logic:**
+Sanctions (legal requirement) > Customer protection > High-risk transactions > Routine verification > Monitoring
+
+</details>
 
 ### TODO 2: Make a Decision With Incomplete Info
 
@@ -185,8 +205,31 @@ Based on Option A result:
 - If real: Take Option B (ask customer for shipping docs to verify bulk order)
 - If shell: Escalate/block
 
-**Hint:**  
-Remember the Golden Source Rule. Always check official registers first. Don't trust customer claims until verified independently.
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Best Next Check: Option A (Check Golden Source Registry)**
+
+**Why?** If "Manufacturer LLC" shows up in official business registry as real company = potentially legitimate. If it's NOT registered = shell company = RED FLAG. This one check tells us the most.
+
+**Based on Option A Results:**
+
+1. **If Manufacturer LLC EXISTS in registry:**
+   - Next step: Take Option B (ask TechTrade for shipping docs, customs records, proof of product receipt)
+   - Likely outcome: Approve (after verification)
+   - Reasoning: Real vendor + real documentation + real business logic = legitimate bulk transaction
+
+2. **If Manufacturer LLC DOES NOT EXIST in registry:**
+   - Next step: Block immediately + escalate
+   - Likely outcome: Block (potential shell/fraud)
+   - Reasoning: Vendor doesn't exist officially = no way to verify legitimacy. TechTrade is either victim or complicit. Request explanation.
+
+**Why Not Other Options?**
+- Option B: Asking customer for more details = wastes time if vendor is fake
+- Option C: Freezing now is premature without verification
+- Option D: Approving pending docs = too risky ($200k unverified)
+
+</details>
 
 ### TODO 3: Document Your Decision
 **What to do:**  
@@ -221,8 +264,39 @@ Documentation = proof you made informed decisions. If someone questions your dec
 **Validation:**  
 Your decision summary should be clear enough that another investigator could understand why you chose that action.
 
-**Hint:**  
-Write like you're explaining to a judge: "Here's what I knew. Here's what it indicated. Here's what I decided. Here's why." Clear, professional, evidence-based.
+<details>
+<summary>💡 Example Decision Log (Click to reveal)</summary>
+
+```
+CASE DECISION LOG - Alert 2: TechTrade Bulk Order Investigation
+
+Date: [Today]
+Case ID: ALERT-2024-00512
+Alert: Bulk Electronics Order - Unknown Vendor
+Risk Level: HIGH
+
+Decision: ESCALATE FOR VERIFICATION (Pending Outcome)
+
+Reasoning: TechTrade is established customer (2 years, clean history) but received $200k from new vendor "Manufacturer LLC" with invoice provided. Vendor verification failed (phone disconnected). Two possibilities: (1) legitimate expansion with communication issue, or (2) shell company fraud. Golden Source check (business registry) is required before proceeding.
+
+Next Steps: 
+1. Check Manufacturer LLC in [Country] business registry TODAY
+2. If real: Request TechTrade provide shipping docs + customs records to verify product receipt
+3. If shell/not found: Block transaction + request TechTrade explanation + escalate to compliance team
+4. Timeline: Decision within 24 hours
+
+Investigator: [Your Name]
+Reviewed By: [Manager]
+```
+
+**Why This Format Works:**
+- Shows clear evidence-based reasoning
+- Explains both paths (if real, if shell)
+- Sets clear timeline
+- Documents who made decision
+- Protects Wise legally
+
+</details>
 
 ---
 
