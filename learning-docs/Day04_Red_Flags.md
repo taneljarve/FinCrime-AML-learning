@@ -161,8 +161,25 @@ Velocity is one of the easiest red flags to spot and most reliable. High velocit
 **Validation:**  
 Your answers are: A = LOW (funds retained and spent gradually), B = HIGH (same-day cycling), C = LOW (natural spending pattern).
 
-**Hint:**  
-Think: "Is this how a normal person/business uses money?" Normal = gradual use. Suspicious = in-and-out same day, repeating.
+<details>
+<summary>💡 Example Answers (Click to reveal)</summary>
+
+**Customer A Analysis:**
+- Velocity: **LOW** 
+- Why: Customer receives $5,000 and spends it gradually over 10 days ($400-1,500 per transaction). Money stays in account for 1-10 days before being sent. This is normal transaction behavior—legitimate money being used for real purposes.
+
+**Customer B Analysis:**
+- Velocity: **HIGH** ⚠️
+- Why: Daily pattern of receive-then-send within same-day window (2-4 hour gaps). $8,000 received and $7,900 sent same day, repeating daily. This is classic conduit/pass-through behavior. Funds aren't being used for business—they're being moved through the account.
+
+**Customer C Analysis:**
+- Velocity: **LOW**
+- Why: Daily spending of $50 on normal expenses (groceries, utilities) = natural spending pattern. Retention of 30 days is typical for a salary-to-expenses lifecycle. No red flag—this is exactly how consumers normally manage money.
+
+**Interview Point:**
+Customer B is the real risk. When velocity repeats (same pattern multiple days), it's not an accident—it's a strategy to move money quickly and obscurely.
+
+</details>
 
 ### TODO 2: Recipient Variety & Documentation Check
 **What to do:**  
@@ -192,8 +209,30 @@ Recipient variety + no documentation = classic red flag combo.
 **Validation:**  
 You've identified: NO (doesn't match profile), found 3+ red flags, and recognized it as Layering.
 
-**Hint:**  
-Red flags: (1) High recipient variety vs. declared "publishing houses", (2) Personal accounts vs. business entities, (3) Zero documentation, (4) Same-day retention.
+<details>
+<summary>💡 Example Answers (Click to reveal)</summary>
+
+**Question 1: Does this match her profile?**
+**Answer: NO** — Major mismatch!
+
+**Question 2: List 3 Red Flags:**
+1. **Recipient Variety Mismatch:** Profile says "Publishing houses and translation agencies" (business recipients). Actual behavior: 12 personal accounts, zero business transfers.
+2. **No Documentation:** Declared "freelance translator" but her payments have NO invoices, contracts, or business justification.
+3. **Same-Day Retention:** Receives $3,000, immediately splits to multiple accounts within 24 hours. This is classic layering—funds move so fast they obscure source/destination.
+4. **Bonus Flag:** All payments are suspiciously similar amounts ($200 each). This suggests intentional structuring to stay under reporting thresholds.
+
+**Question 3: Which Money Laundering Stage?**
+**Answer: LAYERING** (Stage 2)
+
+- She's not placing cash (receives via bank transfer)
+- She IS distributing funds to multiple accounts to create a confusing transaction trail
+- Funds move quickly through multiple personal accounts
+- Goal: Make the original source ($3,000 from Oxford Publishing) untraceable
+
+**What You Should Do:**
+"This is layering activity. Escalate immediately to compliance team. Consider blocking future transactions until customer provides documentation explaining why invoices don't match payments and why a translator is paying personal accounts."
+
+</details>
 
 ### TODO 3: Pass-Through Pattern Recognition
 **What to do:**  
@@ -221,8 +260,34 @@ Pass-through detection is critical for your live assessment in the interview.
 **Validation:**  
 YES, it's a pass-through. Suspicious: (1) Immediate distribution, (2) Multiple personal accounts, (3) No business purpose for distributions, (4) Invoiced as "consulting" but split to randoms. Action: Block/escalate, investigate account purpose.
 
-**Hint:**  
-Ask: "Would a real business do this?" If answer is NO, it's likely layering.
+<details>
+<summary>💡 Example Answers (Click to reveal)</summary>
+
+**Question 1: Is this a pass-through pattern?**
+**Answer: YES** — Textbook pass-through 🚨
+
+**Question 2: What's suspicious?**
+1. **Immediate Distribution:** Money received Monday morning, split Monday afternoon. Zero retention—no legitimate business reason to hold funds.
+2. **Multiple Personal Accounts:** $10k split to 3 personal accounts + retained. "Tech Solutions Consulting" shouldn't need to distribute to personal accounts.
+3. **Invoice Mismatch:** Invoice says "Consulting Services for Q1" (business purpose), but payment is distributed to personal accounts with no explanation. Invoice doesn't justify the personal distributions.
+4. **Amount Split Pattern:** Suspicious precision ($3.5k, $3.5k, $2k, $1k retained). Looks intentional rather than random business payment.
+
+**Question 3: Your Immediate Action?**
+1. **Block the account** from further transfers until compliance review
+2. **Escalate to Compliance Team** with the transaction report
+3. **Flag for Enhanced Due Diligence:** Ask the customer
+   - "Why is a consulting business distributing payments to personal accounts?"
+   - "Provide business purpose documentation for Account X, Y, Z distributions"
+   - "Provide identity verification for Account X, Y, Z holders"
+4. **Document everything** in case filing Suspicious Activity Report (SAR) is required
+5. **Consider account closure** if responses are unsatisfactory
+
+**Key Learning:**
+This is **Layering in action**. The customer received money (probably from dirty source, though we can't confirm), and immediately split it to multiple accounts to create confusion and distance themselves from the original source. By the time investigators trace the money, it's scattered across multiple personal accounts, making it hard to prove the money went where.
+
+Your job: Stop it at the pass-through stage before the money gets dispersed.
+
+</details>
 
 ---
 
@@ -272,8 +337,70 @@ Account receiving funds from one source and immediately distributing to multiple
 - Your job: Spot these patterns and escalate
 
 **Challenge Questions:**
-1. If you see high velocity but the customer has a legitimate explanation (e.g., "paid salary, immediately spent on bills"), should you investigate? Why?
-2. How would you explain "pass-through" behavior to a customer in non-technical terms?
+
+**Challenge 1: If you see high velocity but the customer has a legitimate explanation (e.g., "paid salary, immediately spent on bills"), should you investigate? Why?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Short Answer: YES, investigate further.** But differently than if there's NO explanation.
+
+**Why:**
+- Legitimate explanation doesn't automatically mean LOW risk—it means CONDITIONAL risk
+- You need to verify the explanation matches the documentation
+- Example: "Spent on bills" → Ask for receipts, utility statements, landlord confirmations
+
+**Specific Actions:**
+1. **Request supporting documentation:**
+   - Ask for utility bills, rent receipts, grocery spending statements
+   - Verify the amounts/timing claimed actually match
+
+2. **Cross-check against profile:**
+   - If they're supposed to be a business but spending like a consumer, something's off
+   - If they're supposed to work in London but paying bills in different countries, red flag
+
+3. **Behavioral pattern analysis:**
+   - Is this a one-time event or repeated pattern?
+   - One-time: "I got paid and paid annual taxes immediately" = reasonable
+   - Repeated daily: "Get salary, pay random personal accounts daily" = layering
+
+**Interview Answer Nuance:**
+Show that you don't just accept explanations—you *verify* them. That's what separates good compliance from bad compliance.
+
+</details>
+
+**Challenge 2: How would you explain "pass-through" behavior to a customer in non-technical terms?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Customer-Friendly Explanation:**
+
+"Hi [Name], we've noticed an unusual pattern on your account. Money arrives and immediately gets sent out to multiple different accounts on the same day. 
+
+To help us understand your business better, we need clarification:
+- Why do funds arrive and leave the same day?
+- What business purpose connects these transactions?
+- Can you provide invoices or contracts showing work for each person/entity receiving funds?
+
+This isn't an accusation—we just need documentation to match your stated business model. Once we understand the flow, we can move forward."
+
+**Why This Works:**
+- Non-accusatory ("pattern" not "fraud")
+- Asks for documentation politely
+- Gives customer a chance to respond
+- Shows good faith (gives them opportunity to explain)
+
+**What NOT to Say:**
+- ❌ "We know you're money laundering"
+- ❌ "This pattern indicates criminal activity"
+- ❌ "We're blocking your account"
+- These escalate tension and create legal liability
+
+**The Real Point:**
+In your interview, they want to see you can communicate professionally with customers while maintaining compliance standards. You're not a detective accusing—you're a professional requesting information.
+
+</details>
 
 ---
 
