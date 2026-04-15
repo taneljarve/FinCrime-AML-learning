@@ -117,6 +117,29 @@ You've documented your declared profile and identified 2 potential deviations.
 **Hint:**  
 Think: What would an investigator find odd about YOUR account? A vacation wire transfer? A random high volume day? That's red flag thinking.
 
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Strong Example:**
+```
+Declared Profile:
+- Source of Funds: Salary from tech company ($3,000/month)
+- Employment: Software Engineer
+- Expected Volume: $2,000-3,000/month (expenses + savings)
+- Countries: Wire to family in Portugal (monthly), occasional travel to Spain
+
+Potential Red Flags in My Account:
+1. Sudden transfer of $25,000 to Nigeria to "invest in business"
+   - This would be RED FLAG because it's (1) new country, (2) high volume, (3) investment (vs. my normal salary use)
+   
+2. Receiving $10,000 from unknown business called "Trading Ltd"
+   - This would be RED FLAG because I never mentioned trading or business income, my profile says only salary income
+
+If Wise saw these, they'd contact me to verify or block/investigate.
+```
+
+</details>
+
 ### TODO 2: Apply the Golden Source Rule
 **What to do:**  
 A customer claims to be a licensed financial advisor in the UK with an FCA (Financial Conduct Authority) license.
@@ -141,6 +164,23 @@ You chose A and explained why it's the authoritative source. You've verified tha
 
 **Hint:**  
 Every country has an official financial regulator register. For US: SEC EDGAR, FINRA. For EU: Local regulator. Google "[country] financial regulator public register" if unsure.
+
+<details>
+<summary>💡 Answer: Why FCA Register is the Golden Source (Click to reveal)</summary>
+
+**Answer: A is correct.** 
+
+The FCA's official public register (https://register.fca.org.uk) is the authoritative source because:
+1. It's the legal, official record maintained by the regulatory body (FCA)
+2. Only ACTUALLY licensed advisors appear here
+3. LinkedIn and websites are self-reported and can be faked
+4. The FCA register is constantly updated and verified
+
+**Example verification:**
+- Search for "John Smith Financial Advisor" on LinkedIn → Might find 20 results
+- Search for "John Smith" on FCA register → Either he appears (licensed) or he doesn't (not licensed - case closed)
+
+</details>
 
 ### TODO 3: Spot KYC Data Inconsistencies
 **What to do:**  
@@ -174,6 +214,33 @@ Compare declarations to activity:
 - Declared: "receives from marketing agencies" vs. Actual: "received from unknown Bangladesh entity"
 - Declared: "$2-5k/month" vs. Actual: "$15k in one transaction"
 - Declared: "freelancer" vs. Actual: "distributing to 7 accounts rapidly" (looks like a pass-through, not freelance work)
+
+<details>
+<summary>💡 Answer: KYC Inconsistencies (Click to reveal)</summary>
+
+**Inconsistencies Found (at least 3):**
+
+1. **Source Mismatch:** 
+   - Declared: "Receives from marketing agencies"
+   - Actual: $15,000 from unknown "Bangladesh-registered business"
+   - Red Flag: Unknown source that doesn't match declared business pattern
+
+2. **Volume Spike:**
+   - Declared: "$2,000-5,000 per month expected"
+   - Actual: "$15,000 in single transaction" (3x normal in one deposit)
+   - Red Flag: Sudden volume increase with no explanation
+
+3. **Recipient Mismatch:**
+   - Declared: "Freelance graphic designer" (should send to software vendors, supplies, maybe contractors)
+   - Actual: Sending $14,500 to 7 personal accounts (not business-related)
+   - Red Flag: Money is being distributed to personal accounts, not used for business purposes
+
+**Investigator's Next Step:** Contact Amir, ask:
+- Who is the Bangladesh business? Why did they send $15k?
+- Why are you sending to personal accounts instead of business vendors?
+- Are your account details compromised (account takeover)?
+
+</details>
 
 ---
 
@@ -232,6 +299,34 @@ Check the official French professional body register (Ordre des Experts-Comptabl
 1. Why is KYC more important than transaction monitoring alone?
 2. If a customer's statement doesn't match their declared purpose, should you investigate or approve them? Why?
 3. What would happen if Wise did NO KYC?
+
+<details>
+<summary>💡 Challenge Question Answers (Click to reveal)</summary>
+
+**Challenge Q1: Why KYC Matters More Than Monitoring**
+KYC establishes the baseline/profile. Without it, you don't know what "normal" is for a customer, so you can't detect "abnormal" activity. Transaction monitoring only works if you KNOW what the customer is supposed to be doing. KYC is the foundation; monitoring is the detection layer.
+
+Example: If Wise didn't collect KYC, you'd see Amir (from TODO 3) sending $14,500 to 7 accounts and have NO IDEA if that's normal for him or suspicious. With KYC baseline showing "freelancer, $2-5k/month, sends to vendors," you immediately know it's RED FLAG.
+
+**Challenge Q2: Investigate or Approve?**
+ALWAYS INVESTIGATE FIRST. Never approve a mismatch without investigation.
+
+Reasons:
+- Possible innocent: Customer declared wrong info, typo, terminology difference
+- Possible fraud: Customer lying about business purpose, using for money laundering
+- Customer protection: Maybe account is compromised (takeover)
+- Regulatory requirement: Mismatch must be resolved before approval
+
+**Challenge Q3: What If Wise Had NO KYC?**
+- Criminals would easily set up accounts (no verification, no baseline)
+- Massive money laundering would happen (funds in/out with no detection)
+- Wise would face infinite regulatory violations & fines
+- Victims' accounts would be exploited without anyone knowing
+- Wise would lose license to operate as a financial institution
+
+It would be a compliance nightmare and make Wise unusable for legitimate customers.
+
+</details>
 
 ---
 
