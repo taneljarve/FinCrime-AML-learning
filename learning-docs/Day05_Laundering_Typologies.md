@@ -152,8 +152,25 @@ Understanding stages helps you prioritize. Placement is urgent (money just came 
 **Validation:**  
 A = Integration (cleaning money through art), B = Placement (disguising cash deposits), C = Layering (splitting funds to hide trail).
 
-**Hint:**  
-Ask: Is money COMING IN (Placement), MOVING AROUND (Layering), or SURFACING AS LEGITIMATE (Integration)?
+<details>
+<summary>💡 Example Answers (Click to reveal)</summary>
+
+**Scenario A = INTEGRATION** (Stage 3)
+- **Why:** Customer transforms dirty cash into a "legitimate" asset (Picasso painting). By holding the asset and claiming investment profit, the money appears clean. This is classic Integration: illegal proceeds becoming legitimate through asset appreciation.
+- **Red Flag:** Sudden $200k cash withdrawal for art with no prior art-related activity, plus artificial listing at inflated price (never intends to sell).
+
+**Scenario B = PLACEMENT** (Stage 1)
+- **Why:** Restaurant is converting illegal proceeds (drug sale cash, tax evasion) into the banking system by claiming it's "tips and sales." Cash is being placed into the financial system with false justification.
+- **Red Flag:** Stated revenue ($15k) << Actual deposits ($50k). The gap is illegal proceeds being integrated into bank records via false claims.
+
+**Scenario C = LAYERING** (Stage 2)
+- **Why:** Money received from multiple sources (5 accounts), then immediately (same day, 8-9 AM) distributed to 8 different accounts. Classic pass-through behavior designed to obscure the origin of the funds and create a confusing paper trail.
+- **Red Flag:** Speed (8-9 AM window), volume (5-to-8 distribution), and zero documentation suggest intentional obfuscation.
+
+**Interview Connection:**
+Your job in transaction monitoring focuses **primarily on catching Layering** (Scenario C). Placement happens at onboarding (screening cash deposits). Integration happens over months/years. But Layering? That's week-to-week, day-to-day transaction patterns YOU'LL monitor at Wise.
+
+</details>
 
 ### TODO 2: Trade-Based Laundering Example
 **What to do:**  
@@ -178,8 +195,32 @@ Trade-based laundering is common globally. Understanding it helps you spot when 
 **Validation:**  
 Your answer shows you understand: Over-invoicing inflates money flowing internationally; the difference is laundered, legitimate invoicing makes it look clean.
 
-**Hint:**  
-Think: What happens if someone imports at $100k but actual wholesale is $50k? Who benefits? How does it "disappear"?
+<details>
+<summary>💡 Example Answers (Click to reveal)</summary>
+
+**Question 1: Where did the extra $50,000 come from?**
+
+The exporter (seller in China) provided the goods for $50k actual cost, but importer paid $100k. The extra $50k came from the importer's "dirty money" reserves or was loaned by someone wanting to launder money internationally.
+
+**Question 2: How does the importer "clean" the $50,000 difference?**
+
+The importer claims the $50k overpayment is "legitimate business expense" — charging it to the company's cost of imports. On accounting records, it appears they overpaid for widgets (normal business decision—maybe negotiated better quality, bulk discount fell through, etc.). The $50k difference now flows through as normal business cost, appearing clean.
+
+**Real Example:**
+- Dirty Money Source: $50k from drug trafficking
+- Integration: Importer imports $50k of goods for $100k
+- Laundering: $50k overpayment hides illegal money as business cost
+- Result: International transfer of $50k that looks legitimate
+
+**Question 3: What would you check as an AML investigator?**
+
+1. **Benchmark pricing:** Compare importer's widget pricing against industry standards (HS codes, market rates). If consistently overpaying by 50%+, it's suspicious.
+2. **Payment timing:** Trade-based laundering often shows payment before/without shipping confirmation. Check if payment preceded actual shipment.
+3. **Counterparty verification:** Research the Chinese exporter. Real company or shell? Verify they actually exist and produce widgets.
+4. **Frequency pattern:** Is this one transaction or repeated pattern? One overpayment could be negotiation error. Repeated overpayment = intentional structuring.
+5. **Business logic:** Why would a rational business consistently overpay? Unless they value moving money more than saving costs (= laundering).
+
+</details>
 
 ### TODO 3: Red Flags in Business Profiles
 **What to do:**  
@@ -217,8 +258,39 @@ Real-world assessment: You see profiles and must decide which need immediate inv
 **Validation:**  
 Customer 3 = Highest risk (vague business, high-risk sources, personal transfers, same-day retention, fake invoices).
 
-**Hint:**  
-Compare activity to profile. Which one LEAST matches their declared business?
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Customer 3 = HIGHEST RED FLAG** 🚨
+
+**Red Flag 1: Vague Business Profile**
+- "General import/export" is too vague. Real businesses specify: "Electronics importer" or "Agricultural export specialist."
+- Vagueness allows flexibility to claim ANY transaction is legitimate.
+
+**Red Flag 2: High-Risk Source Countries + Large Volume**
+- Receives $200k-500k/month from Bangladesh, Vietnam (high-risk FATF jurisdictions).
+- Combined with vague business = perfect cover for laundering structures.
+
+**Red Flag 3: Personal Account Transfers (70% of outflows)**
+- Import/export businesses pay suppliers, logistics, warehouses — ALL business entities.
+- Sending 70% to personal accounts suggests account owner is retaining money (or splitting to accomplices), not running a real business.
+
+**Red Flag 4: Same-Day Retention**
+- Money arrives and leaves same day = pass-through behavior.
+- Legitimate importers need time to: verify shipments, process invoices, arrange distributions to multiple business partners.
+
+**Red Flag 5: Generic Invoices That Don't Match Shipments**
+- "Invoice 001" for $250k with no specifics = shell invoice.
+- Real business invoices detail: item descriptions, quantities, unit prices, HS codes, shipping dates.
+
+**Why Customer 1 & 2 Are Low Risk:**
+- Customer 1 (Freelancer): Activity matches profile perfectly, sends to business entities, normal retention.
+- Customer 2 (Event Planner): High volume justified by business model, documented invoices match transactions, sends to legitimate vendors.
+
+**Your Interview Answer:**
+"Customer 3 presents multiple layering red flags: vague business profile, high-risk jurisdiction sourcing, same-day pass-through pattern, majority personal transfers, and generic invoices. I'd escalate immediately for Enhanced Due Diligence, specifically requesting: (1) detailed business registration and operations proof, (2) sample invoices with shipment documentation, (3) explanation of why 70% of outflows go to personal accounts rather than supplier businesses. Without clear documentation, this account should be declined or frozen pending compliance review."
+
+</details>
 
 ---
 
@@ -269,8 +341,75 @@ Escalate immediately for Enhanced Due Diligence. Ask for: (1) Detailed business 
 - Your job: Catch Layering before Integration happens
 
 **Challenge Questions:**
-1. Why is it easier to stop money laundering at Placement or Layering than at Integration?
-2. If a customer claims they're using Wise because "banks are slow," should you be concerned? Why?
+
+**Challenge 1: Why is it easier to stop money laundering at Placement or Layering than at Integration?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Short Answer:** Placement and Layering happen fast (days/weeks). Integration happens slowly (months/years) and results in assets that are harder to trace back to criminal proceeds.
+
+**Why Placement/Layering are Easier to Stop:**
+
+1. **Speed = Detection:**
+   - Placement: Deposits happen immediately—easy to flag unusual cash deposits
+   - Layering: Rapid transfers between accounts happen within days—patterns stand out quickly
+   - Integration: Slow process—by the time $500k becomes a real estate purchase, money is already "clean"
+
+2. **Documentation Trail:**
+   - Placement/Layering: Transaction records exist (bank transfers, invoices), but often don't match reality
+   - Integration: By now, all documentation has been created to LOOK legitimate (fake business records, property deeds, etc.)
+
+3. **Financial System Access:**
+   - You (Wise) have direct access to all Placement/Layering transactions flowing through your platform
+   - You have NO visibility into Integration once money leaves your system and becomes property/assets
+
+**Real Example:**
+- Day 1 (Placement): Block $100k cash deposit that doesn't match customer profile
+- Days 5-7 (Layering): Stop $100k pass-through transfers
+- Month 6 (Integration): Too late—now it's a $500k apartment purchase; ownership is transferred
+
+**This is your competitive advantage at Wise:** You see Placement and Layering in real-time. Use that visibility.
+
+</details>
+
+**Challenge 2: If a customer claims they're using Wise because "banks are slow," should you be concerned? Why?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Short Answer: YES—this is a MAJOR red flag.** "Speed" is a common reason criminals choose fintech platforms.
+
+**Why This Is Suspicious:**
+
+1. **Legitimate Businesses Don't Prioritize Speed Over Banks:**
+   - Real importers, designers, event planners work with banks (established relationships, credit lines, currency hedging)
+   - They choose banks FOR compliance reasons, not avoid them
+   - "Banks are slow" is excuse used to justify unmonitored transfers
+
+2. **Speed + Opacity Combo = Red Flag:**
+   - Wise is known for fast, cross-border transfers
+   - Criminals exploit this: "I need money to China by tomorrow"
+   - Banks delay (compliance reasons); Wise is faster = their preference for laundering
+
+3. **Behavioral Red Flag:**
+   - Legitimate businesses: "Your fees are lower" or "You support developing countries"
+   - Criminal customers: "I need speed" or "I want to avoid banks"
+   - Phrasing matters. "I want to avoid banks" = I want to avoid oversight
+
+**Your Response in the Interview:**
+
+"If a customer emphasizes speed over other benefits (fees, coverage, service), I'd escalate for Enhanced Due Diligence. I'd ask specific questions:
+- Why is speed critical to your business? (Demand analysis)
+- What were you doing before? (Previous banking relationship?)
+- Can traditional banks not meet your needs? If yes, why not? (Compliance questions)
+
+If their answers are vague or focus on avoiding scrutiny, I'd recommend declining the account or filing a SAR."
+
+**The Fintech Dilemma:**
+Wise exists to be FASTER than banks. But speed + compliance is the balance. A customer who values ONLY speed (not safety/compliance) is signaling they might be exploring Wise for the wrong reasons.
+
+</details>
 
 ---
 
