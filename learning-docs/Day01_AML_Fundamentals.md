@@ -76,9 +76,9 @@ You are the **first line of defense** between criminals and financial abuse.
 Watch a 5-10 minute explainer on money laundering stages. Search YouTube for "money laundering 3 stages explained" or "FATF placement layering integration."
 
 Then, write down in your own words:
-1. One example of **Placement** (not from this course)
-2. One example of **Layering** (not from this course)
-3. One example of **Integration** (not from this course)
+1. One example of **Placement** (not from this course) politician gets corrupt money
+2. One example of **Layering** (not from this course) passes through normal people
+3. One example of **Integration** (not from this course) presents as company revenue
 
 **Why:**  
 Understanding these stages helps you recognize suspicious patterns. If you see a "pass-through" pattern, you're likely seeing Layering.

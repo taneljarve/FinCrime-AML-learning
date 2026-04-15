@@ -81,8 +81,23 @@ False positives (flagging wrong person = blocking legitimate customer) are as ba
 **Validation:**  
 1 = Likely SAME (common transliteration variation), 2 = Likely SAME (common transliteration), 3 = Likely DIFFERENT (too many changes), 4 = Likely SAME (plausible spelling variation).
 
-**Hint:**  
-Consider: Transliteration from non-Latin alphabets (Arabic, Cyrillic) often has multiple "correct" spellings. ONE letter difference = often same person. Multiple changes = likely different.
+<details>
+<summary>💡 Example Answers (Click to reveal)</summary>
+
+| Pair | Answer | Reasoning |
+|------|--------|----------|
+| 1. Mohammed vs. Mohammad | **LIKELY SAME** | Both are standard transliterations from Arabic محمد. "oe" vs. "a" is common variation. Spelling difference caused by transliteration choice, not different people. |
+| 2. Amir Rahman vs. Amir Rehman | **LIKELY SAME** | Single letter difference ("a" vs. "e"). Common transliteration variation from Arabic رحمــن. Same first name, last name very similar. Same person. |
+| 3. Dr. John Smith vs. Jon Smyth | **LIKELY DIFFERENT** | Multiple changes: "Dr." vs. no title (could be omitted), "John" vs. "Jon" (plausible nickname BUT "Smith" vs. "Smyth" is different surname spelling. Overall too many changes. Verify before assuming same person. |
+| 4. Sarah Johnson vs. Sara Johnston | **LIKELY SAME** | "Sarah" vs. "Sara" (nickname/spelling variation, common), "Johnson" vs. "Johnston" (likely same surname, just added "t"). Probably same person with spelling variations. |
+
+**How to Verify When Unsure:**
+- Ask customer for government ID (passport, national ID)
+- Check against OFAC/sanctions lists (use official spellings)
+- Cross-reference with employer records
+- If still unsure, flag as potential match + request clarification
+
+</details>
 
 ### TODO 2: Analyze Transaction Inconsistencies
 **What to do:**  
@@ -115,8 +130,40 @@ Inconsistencies:
 3. Payments made June 2 per note, but table shows June 3
 4. DOB: Note says 1985, KYC says 1982 (3-year difference!)
 
-**Hint:**  
-Compare line-by-line. Dates, amounts, names, profiles. Any mismatch = inconsistency.
+<details>
+<summary>💡 Example Answers (Click to reveal)</summary>
+
+**ALL Inconsistencies Found (at least 3):**
+
+1. **Timing Inconsistency (T3 Date Mismatch):**
+   - **Analyst Note claims:** "All transfers received on same day, June 1"
+   - **Table shows:** T3 received on June 2 (not June 1)
+   - **Red Flag:** This is a significant error. Timing matters in money laundering detection (pass-through timing analysis).
+
+2. **Amount Inconsistency (Total Mismatch):**
+   - **Analyst Note claims:** Total inflow = $3,000
+   - **Table shows:** $1,050 + $1,050 + $1,100 = $3,200
+   - **Red Flag:** $200 discrepancy. This is INTENTIONAL structuring (just below $3,250 threshold?). Classic money laundering indicator.
+
+3. **Payment Date Inconsistency:**
+   - **Analyst Note claims:** "Three payments made on June 2"
+   - **Table shows:** Both payments made on June 3 (T4 & T5 both June 3)
+   - **Red Flag:** Timing affects retention analysis. June 2 vs. June 3 changes velocity calculation.
+
+4. **Date of Birth Inconsistency (BONUS - most serious):**
+   - **Analyst Note claims:** DOB = April 15, **1985**
+   - **KYC Profile shows:** DOB = April 15, **1982** (3-year difference!)
+   - **Red Flag:** 3-year age discrepancy could indicate: identity fraud, multiple identities, data entry error, or intentional obfuscation.
+
+**Why These Matter in AML Context:**
+- Timing discrepancies = changes customer's velocity/pattern assessment
+- Amount discrepancies = could hide structuring
+- DOB discrepancies = person verification failure (could be wrong person or fake identity)
+
+**Your Action:**
+Flag ALL inconsistencies, request correction from analyst, and verify KYC data against government ID before proceeding.
+
+</details>
 
 ### TODO 3: Build Your Accuracy Checklist
 **What to do:**  
@@ -136,8 +183,34 @@ You're building your personal quality control process. Use this in the interview
 **Validation:**  
 Your checklist includes: names, dates, amounts, recipients, documentation, jurisdiction flags, business logic, volume baseline.
 
-**Hint:**  
-Think about what you've learned in Days 1-6. What would a criminal try to hide? Check those areas.
+<details>
+<summary>💡 Example Checklist (Click to reveal)</summary>
+
+**Data Integrity Checklist for Case Review:**
+
+- [ ] **Names:** Spelling consistent across customer KYC, invoices, transaction records? Check for transliteration variations (not always an error).
+- [ ] **Dates:** DOB, transaction dates, timeline sequence correct? No impossible dates (e.g., payment before invoice)?
+- [ ] **Amounts:** Invoice totals match transaction amounts match summary amounts? No unexplained discrepancies (structuring indicator)?
+- [ ] **Recipients/Sources:** All entities documented? Cross-reference counterparties against DOB register, business registry, sanctions lists?
+- [ ] **Documentation:** Every transaction has supporting invoice/contract/receipt? Missing documentation = red flag by default.
+- [ ] **Jurisdiction Flags:** Any high-risk country involvement? Sanctioned jurisdictions? Verify against OFAC/FATF lists.
+- [ ] **Business Logic:** Do transactions match customer's declared business? Freelancer shouldn't have high-volume manufacturing payments, etc.
+- [ ] **Volume Baseline:** Is this transaction abnormal for this customer? Compare to historical pattern or profile expectations.
+- [ ] **Velocity Pattern:** Funds staying normal duration or moving same-day? High velocity without business justification = red flag.
+- [ ] **Recipient Variety:** Money going to consistent partners or suddenly new entities? One-in-many-out pattern = pass-through concern.
+
+**Bonus Checks (Advanced):**
+- [ ] Cross-reference invoices against business registrations online (check if vendors actually exist)
+- [ ] Verify business purpose by asking for supporting contracts/POs
+- [ ] Check for invoice number gaps (could indicate missing or forged invoices)
+- [ ] Review for round numbers (e.g., all exactly $1,000 payments = suspicious, often indicates structuring)
+
+**How to Use This:**
+- Print or memorize this checklist
+- Use it daily when reviewing cases
+- Mention it in your Wise interview: "I developed a personal checklist to ensure I catch details other analysts might miss"
+
+</details>
 
 ---
 
@@ -191,8 +264,72 @@ DO NOT accept the discrepancy. Request: (1) Clarification from analyst, (2) Orig
 - Create your personal quality-control checklist
 
 **Challenge Questions:**
-1. In the interview, if they ask "How do you stay accurate with large volumes of data?", how would you answer?
-2. If you found 5 inconsistencies in a case file, would you block the customer or investigate? Why?
+
+**Challenge 1: In the interview, if they ask "How do you stay accurate with large volumes of data?", how would you answer?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Strong Interview Answer:**
+
+"I've developed a personal data integrity checklist that I apply to every case file. I check: names (spelling consistency), dates (timeline logic), amounts (no discrepancies), documentation (every transaction backed), jurisdiction flags, business logic, and velocity patterns.
+
+I work systematically—not rushing through cases. For high-volume review, I prioritize by risk level: new accounts and large transactions get enhanced scrutiny first. I also take breaks to avoid fatigue-related errors.
+
+When I spot an inconsistency, I flag it for clarification before making a decision. I don't assume analyst notes are correct—I verify against the transaction table. At Wise, with potentially millions of daily transactions, accuracy requires process discipline and tool usage (database verification, automated flagging).
+
+I view accuracy as a core function of my role: catching bad actors AND protecting innocent customers from false positives."
+
+**Why This Works:**
+- Shows you have a **systematic process** (not winging it)
+- Shows you **prioritize** (smart work, not just hard work)
+- Shows you **verify** (don't trust blindly)
+- Shows you understand **both sides** (catch criminals AND protect customers)
+- Shows compliance mindset (accuracy = compliance = business protection)
+
+</details>
+
+**Challenge 2: If you found 5 inconsistencies in a case file, would you block the customer or investigate? Why?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Short Answer: INVESTIGATE first, then decide—don't block automatically.**
+
+**Why Investigation First:**
+
+1. **Differentiate Error Types:**
+   - 5 small admin errors (typos) = probably just mistakes
+   - 5 strategic inconsistencies (all hiding amounts/dates) = intentional
+   - Difference matters for decision
+
+2. **Request Clarifications:**
+   - Contact analyst: "Can you clarify these 5 discrepancies?"
+   - 80% might be simple fixes (typos, spreadsheet errors)
+   - 20% might be red flags
+
+3. **Assess Severity:**
+   - Name misspellings (low severity)
+   - Amount discrepancies (HIGH severity = structuring indicator)
+   - Date mismatches (medium severity = affects pattern analysis)
+   - DOB differences (very high severity = identity issue)
+
+**Decision Logic:**
+
+- **If 5 inconsistencies are LOW severity + easily explained:** APPROVE (after fixes)
+- **If inconsistencies are HIGH severity + pattern suggests layering:** BLOCK + FILE SAR + ESCALATE
+- **If mixed severity + can't verify:** ENHANCED DUE DILIGENCE before deciding
+
+**Real Scenario:**
+"5 inconsistencies found:
+
+1-3: Name spelling variations (BENIGN) ✅
+4: Amount discrepancy $1,000 vs. $1,500 (red flag for structuring) ⚠️
+5: Invoice date before transaction (timeline impossible) ⚠️
+
+Your decision: INVESTIGATE #4 & #5 carefully. If #4 is intentional structuring + #5 is fake invoice, BLOCK. If explained as admin error, approve after correction."
+
+</details>
 
 ---
 

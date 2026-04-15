@@ -115,8 +115,24 @@ Establishing baseline is your first job when monitoring a customer. Once you kno
 **Validation:**  
 Baseline: "Maria receives ~$3,500-4,200/month from consulting firms, retains funds 2-3 weeks, and sends to consistent business vendors." Alert triggers: receives from unknown sources, sends to personal accounts, high velocity (<24 hrs).
 
-**Hint:**  
-Think: "What's consistent? What's predictable?" That's the baseline.
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Maria's Baseline (1-2 sentences):**
+"Maria receives approximately $3,500-4,200 per month from consulting firms, maintains a retention window of 2-3 weeks, and consistently sends funds to business vendors. Her velocity is moderate and predictable."
+
+**Alert Triggers for Maria:**
+- Receives from unknown sources or high-risk jurisdictions
+- Sends to personal accounts (completely out of character)
+- High velocity (<24 hour retention, reversing her normal 2-3 week pattern)
+- Volume spikes 2x+ without business explanation
+- Changes in recipient type (from business to personal)
+- Invoices/documentation missing or don't match transactions
+
+**Why This Matters:**
+Once you know Maria's normal, deviations become obvious. A $50k transfer from an unknown source is HUGE for someone normally receiving $4k/month.
+
+</details>
 
 ### TODO 2: Spot Baseline Deviation
 **What to do:**  
@@ -139,8 +155,32 @@ This is your daily job: detect deviations, decide if urgent, escalate.
 **Validation:**  
 YES, major deviation. Suspicious: $50k from unknown source + same-day distribution to 9 personal accounts (completely out of character). Action: Block distributions pending investigation. Request documentation on "Tech Innovation LLC" and explanation for money distribution.
 
-**Hint:**  
-Compare each transaction to the 6-month baseline. If it contradicts the pattern, flag it.
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Question 1: Is this a baseline deviation?**
+**Answer: YES — MAJOR deviation** 🚨
+
+**Question 2: Which transactions are suspicious?**
+
+1. **Day 1: $50,000 from "Tech Innovation LLC"**
+   - Deviation: Unknown source (never received from before)
+   - Baseline was: 6 months of consistent $3.5-4.2k from known consulting firms
+   - Red Flag: 12x normal amount from new, unvetted source
+
+2. **Day 1: $45,000 to 9 personal accounts (same day)**
+   - Deviation: Distribution to personal accounts (NEVER done before)
+   - Baseline was: Consistent payments to business vendors only
+   - Red Flag: Classic pass-through/layering pattern
+   - Red Flag: High velocity (<24 hours)
+
+3. **Transactions T3 & T4 are normal** (regular consulting firm source + regular vendor distribution)
+
+**Question 3: What would you do?**
+
+"Escalate immediately: (1) Block the $45,000 distributions pending investigation; (2) Request Maria provide documentation on 'Tech Innovation LLC' (registration, business profile, why she's working with them); (3) Request explanation for the 9 personal account distributions and their business purpose; (4) File as potential Layering activity until verified. Consider Enhanced Due Diligence and account review."
+
+</details>
 
 ### TODO 3: Normal vs. Suspicious Deviation Decision
 **What to do:**  
@@ -181,8 +221,25 @@ You'll encounter dozens of deviations daily. Most are normal. You need to distin
 **Validation:**  
 A = NORMAL (seasonal, explainable), B = SUSPICIOUS (sudden new vendors, rapid cycling), C = NORMAL (documented, retained normally), D = NORMAL (seasonal business, expected pattern).
 
-**Hint:**  
-Ask: "Can I explain this with the customer's business logic?" If YES = probably normal. If NO = flag it.
+<details>
+<summary>💡 Example Answers (Click to reveal)</summary>
+
+**Scenario A = NORMAL Deviation** ✅
+- **Reasoning:** Holiday bonus + holiday shopping is completely explainable and predictable. December higher spending is seasonal. No red flags. This is normal customer behavior.
+
+**Scenario B = SUSPICIOUS Deviation** 🚨
+- **Reasoning:** Sudden shift from 3-4 known vendors to 15 NEW vendors + high velocity (<6 hours) + small amounts = classic structuring/smurfing pattern. This violates baseline significantly and contradicts normal business logic.
+
+**Scenario C = NORMAL Deviation** ✅
+- **Reasoning:** Documented bonus from same employer (reasonable), normal retention (2 weeks), purpose matches past behavior. Even though amount is high, all factors align with customer profile.
+
+**Scenario D = NORMAL Deviation** ✅
+- **Reasoning:** Business is seasonal (import expects high volume July-Sept). Currently August with 3x volume = expected for seasonal business. Invoices match, vendors are consistent. This is explained by business logic. No red flag.
+
+**Pattern Recognition:**
+Notice: Suspicious deviations involve UNKNOWN entities, BEHAVIOR CHANGES, or CONTRADICTIONS to profile. Normal deviations are EXPLAINABLE and MATCH business logic.
+
+</details>
 
 ---
 
@@ -233,8 +290,80 @@ Use their KYC profile/declared business purpose as reference. Can't use historic
 - Suspicious deviation = escalate. Normal deviation = document and move on
 
 **Challenge Questions:**
-1. Why is the first 30 days of a new account particularly important?
-2. If a customer explains their deviation (e.g., "I got a business loan"), should you accept it? What would you verify?
+
+**Challenge 1: Why is the first 30 days of a new account particularly important?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Short Answer:** The first 30 days establish the baseline. If criminals exploit a new account before controls activate, money can move before detection.
+
+**Why 30 Days is Critical:**
+- **No baseline exists yet:** You can't compare to historical patterns
+- **Higher risk window:** Criminals often activate accounts quickly to move money before scrutiny
+- **Profile is your only reference:** Can't spot deviations if nothing is documented yet
+- **Money can move faster:** Before red flags get flagged
+
+**Your Response:**
+- First 30-day monitoring = ENHANCED scrutiny
+- Any deviation from profile = bigger red flag
+- Document EVERYTHING during first 30 days
+- After 30-60 days, baseline becomes clearer
+
+**Example:**
+- New Freelancer account receives $15k on Day 5 (says "advance retainer")
+- Can't compare to baseline (none exists)
+- Profile says "freelancer, $2-5k/month expected"
+- $15k advance COULD be normal OR could be money plac ement
+- Action: Request documentation. Verify retainer claim.
+
+</details>
+
+**Challenge 2: If a customer explains their deviation (e.g., "I got a business loan"), should you accept it? What would you verify?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Short Answer: NO, don't just accept it.** Verify the explanation against documentation.
+
+**Verification Steps:**
+1. **Request loan documentation:**
+   - Bank statement showing loan originated
+   - Loan agreement with terms, interest rate, repayment schedule
+   - Proof of receipt of funds
+
+2. **Cross-check the amounts:**
+   - Deviation size matches loan amount? 
+   - Timeline matches (did they receive funds when they claim?)
+
+3. **Business logic:**
+   - Is the loan purpose aligned with their business?
+   - (If freelancer, massive equipment loan = might be odd)
+
+4. **Repayment pattern:**
+   - If it's a loan, do you see repayment activity?
+   - Or is money just sitting/moving oddly?
+
+5. **Alternative possibility:**
+   - "Business loan" could be code for money placement
+   - Structuring could use loan as cover story
+   - Verify independently, don't just trust customer words
+
+**Real Example:**
+"Customer says: 'I got a $50k business loan, used it for merchandise.'"
+- You verify: Loan documents exist ✅
+- You verify: $50k received on stated date ✅
+- You wait: Do you see merchandise inventory in business accounts? 
+- You wait: Do you see loan repayment schedule starting? ✅ (legitimate)
+- Verdict: Explanation verified. Normal deviation.
+
+**Vs. Suspicious:**
+- Customer says: "I got a loan"
+- You ask: "Can you provide loan documents?"
+- They say: "Bank is slow, coming soon" (never arrives)
+- Verdict: Red flag. Explanation unverified.
+
+</details>
 
 ---
 
