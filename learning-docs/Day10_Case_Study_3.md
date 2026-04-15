@@ -139,8 +139,23 @@ Distinguishing victims from fraudsters changes your response. Victims need prote
 2. Most likely: A) Account Takeover OR C) Malware.  
 3. Sequence: Mohammad received scam email → clicked link → malware installed on computer → passwords stolen → account compromised → criminal accessing and stealing.
 
-**Hint:**  
-Real fraudsters would hide their theft better. They'd use the account gradually so it doesn't trigger alerts. Mohammad's massive sudden changes in ONE WEEK = typical compromise pattern.
+<details>
+<summary>💡 Example Answers (Click to reveal)</summary>
+
+**Is Mohammad the victim or the fraudster?**
+Mohammad is almost certainly the VICTIM. Evidence: (1) Age 65+ (senior fraud target profile), (2) Normal spending pattern for 2 years (established legitimacy), (3) Immediate denial when Wise called (victims know they didn't authorize transfers), (4) One-week sudden change (accounts don't change by themselves unless compromised), (5) Transfers to investment scheme (classic elder fraud), (6) Predictable family transfers followed by criminal spending (pattern change = compromise indicator).
+
+**What type of fraud is this?**
+Most likely: **A) Account Takeover** or **C) Malware Compromise**. Reasoning: Sudden unauthorized access to his account + ability to transfer funds = his credentials were stolen. Most likely method: Mohammad received phishing email with malware link, clicked it, passwords were captured, and criminal accessed account directly. Classic account takeover pattern.
+
+**Most likely sequence:**
+1. Mohammad receives email from "PayPal" saying "Confirm your account" (phishing)
+2. Mohammad clicks link (it's actually malware)
+3. Malware captures his password
+4. Criminal logs in and transfers funds
+5. Mohammad never realizes until Wise contacts him
+
+</details>
 
 ### TODO 2: Red Flags Checklist
 **What to do:**  
@@ -169,8 +184,27 @@ Quantifying red flags helps you explain severity to others.
 **Validation:**  
 10/10 flags present. This is a critical case. Mohammad needs immediate protection.
 
-**Hint:**  
-Count how many boxes you check. More than 5 = definitely escalate. More than 8 = emergency freeze.
+<details>
+<summary>💡 Example Checklist (Click to reveal)</summary>
+
+✅ **RED FLAGS PRESENT IN MOHAMMAD'S CASE: 10/10**
+
+- [x] Sudden velocity change (normal $500/month → $8k withdrawn in 1 week)
+- [x] New recipients never seen before (cryptocurrency, investment schemes)
+- [x] Transfers to unknown accounts (unverified entities)
+- [x] Same-day splits ($8k arrives, immediately transferred out)
+- [x] Transfers to high-risk targets (cryptocurrency exchanges, overseas investment schemes)
+- [x] Customer denies knowledge ("I didn't approve this!")
+- [x] Age 65+ (perfect victim profile for elder fraud)
+- [x] Failed login from unusual location (+ multiple login attempts)
+- [x] Out-of-character spending (pensions transferred to crypto, not normal behavior)
+- [x] Transfers to "investment" schemes (classic Ponzi scam target)
+
+**Total Red Flags: 10/10 = MAXIMUM SEVERITY = EMERGENCY FREEZE REQUIRED**
+
+When you see 8-10+ flags (especially on elderly customer with low digital literacy): Freeze account immediately. Ask questions later. This is protecting a victim from financial devastation.
+
+</details>
 
 ### TODO 3: Your Recommendation
 **What to do:**  
@@ -214,8 +248,38 @@ This is leadership-level thinking. Show you can protect customers AND prevent fr
 **Validation:**  
 OPTION 1 (Freeze & Protect) is correct. Reasoning: Mohammad is a VICTIM, not a fraud risk. Wise's job is protecting customers. Actions: Immediate freeze, contact customer, help secure, protect assets, monitor for recovery.
 
-**Hint:**  
-Remember Wise values: "Customers > team > ego." Protecting Mohammad from losing his pension = core Wise mission.
+<details>
+<summary>💡 Example Recommendation (Click to reveal)</summary>
+
+```
+RECOMMENDATION FOR MOHAMMAD HASSAN ACCOUNT:
+
+Given the evidence, I recommend:
+OPTION 1 - FREEZE & PROTECT (Victim Account Compromise)
+
+Specifically, we should:
+- Freeze account IMMEDIATELY (stop all outgoing transfers + place hold on balance)
+- Call Mohammad by phone using number on file to verify compromise
+- Guide him through emergency password reset + security recovery
+- Reverse fraudulent destination transactions where possible ($5,000 to investment scheme)
+- File incident report with financial crimes team
+- Contact cryptocurrency exchange to flag $2k withdrawal (attempt recovery)
+- Monitor account for 30 days for additional compromise signs
+- Send Mohammad guidance on phishing prevention + malware protection
+- Waive any fees associated with this incident (customer service goodwill)
+
+Timeline: URGENT - Execute within 1 hour of detection
+
+Reasoning: Mohammad is a VICTIM of account compromise, not a fraud risk. Wise's core mission is protecting customers. Immediate action prevents full pension loss. Every hour delayed increases theft risk.
+```
+
+**Why Option 1 (Not Option 2 or 3):**
+- Option 2 (Escalate & Investigate) = too slow. Victim's pension is being stolen NOW.
+- Option 3 (Block & Close) = punishes victim for being compromised. Wrong morally and legally.
+
+**This is leadership thinking:** Protecting vulnerable customers IS the job. Compliance isn't just about blocking criminals; it's about protecting victims.
+
+</details>
 
 ---
 

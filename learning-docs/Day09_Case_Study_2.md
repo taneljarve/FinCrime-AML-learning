@@ -164,8 +164,24 @@ Shell company detection is critical. If you verify a company is real, Wise can w
 **Validation:**  
 YES, likely a shell company. Reasons: (1) Brand new (6 months), (2) No real operations (virtual address), (3) No financials, (4) Sarah Johnson is professional nominee (47 companies = red flag). Next step: Request Priya to provide more information on CloudSync, or block the transaction.
 
-**Hint:**  
-47 companies for one director = almost certainly nominee. Legitimate director has 1-3 companies max (unless large corporation employee).
+<details>
+<summary>💡 Example Answers (Click to reveal)</summary>
+
+**Is CloudSync a shell company? YES**
+
+CloudSync shows 3 shell company hallmarks: (1) Brand new (6 months old with no financial history), (2) Virtual address with no physical office, (3) director Sarah Johnson tied to 47 other companies (professional nominee pattern). Real operationalcompanies have financials, office history, and directors with 1-3 company affiliations max.
+
+**Why is Sarah Johnson's role concerning?**
+Managing 47 companies as director is impossibly high. This suggests she's a "professional nominee"—a hired figurehead whose name appears on company registrations while someone else actually controls the business. Nominees are classic money laundering structures used to hide beneficial ownership.
+
+**Next steps if I were the investigator:**
+1. Search if Sarah Johnson's address (and other directors' addresses) link to other suspicious companies
+2. Verify if Sarah Johnson works for a "Registered Agent" service (company that manages nominees)
+3. Request CloudSync provide beneficial ownership documentation directly
+4. Check business registry for financial filings (if they exist)
+5. Block Priya's transfer pending verification of CloudSync's legitimacy
+
+</details>
 
 ### TODO 2: Trace Beneficial Ownership
 **What to do:**  
@@ -184,8 +200,35 @@ This is real investigator work. Nominees are layers of obfuscation. Your job: re
 **Validation:**  
 Steps should include: (1) Check if Sarah Johnson (and other directors) are tied to common entities/addresses, (2) Search corporate databases for connections between the 47 companies, (3) Check if they share shareholders, (4) Research if Sarah Johnson and others are professional nominees (registered with service company), (5) Request beneficial ownership information from CloudSync directly.
 
-**Hint:**  
-Professional nominees often work for "Registered Services Corp" or similar. These companies manage nominee directors. Trace to the service provider, and you might find the real owner.
+<details>
+<summary>💡 Example Investigation Steps (Click to reveal)</summary>
+
+1. **Search corporate database for Sarah Johnson's connections:**
+   - Query all 47 companies where Sarah is director
+   - Check if they share: shareholders, address, business sector, or payment patterns
+   - Look for clusters (e.g., all 47 in offshore jurisdictions = red flag)
+
+2. **Identify the "Registered Agent" Service:**
+   - Research if Sarah Johnson is employed by/affiliated with a company that provides "nominee director" services
+   - Common firms: Registered Services Corp, Nominee Management Ltd, etc.
+   - If found, this confirms she's a professional nominee
+
+3. **Trace beneficial ownership through corporate records:**
+   - Check shareholder lists of CloudSync: Who actually owns the company?
+   - Check if same shareholders appear in the other 47 companies
+   - Look for hidden connections (same address, same payment methods, related entities)
+
+4. **Interview Sarah Johnson directly (if possible):**
+   - Ask: "How do you manage 47 companies simultaneously?"
+   - Ask: "Do you use a registered agent service?"
+   - If she dodges or can't answer = confirms nominee status
+
+5. **Request beneficial ownership from CloudSync:**
+   - File formal request for "Ultimate Beneficial Owner" documentation
+   - Compare against business registry filings
+   - If names don't match or can't be provided = escalate
+
+</details>
 
 ### TODO 3: Decision on Priya's Claim
 **What to do:**  
@@ -205,8 +248,15 @@ This combines shell company detection with customer risk assessment. Even if cus
 **Validation:**  
 OPTION B is correct. Reasoning: CloudSync appears to be a shell company. Wise's AML policy likely prohibits transfers to unverified entities/shells. Request Priya provide documentation on CloudSync and explanation for the transfer. If she can't/won't, block. If she explains legitimately, then reassess.
 
-**Hint:**  
-Think about Wise's reputation. If Wise knowingly helped funnel $10k to a shell company, and that later connected to fraud, Wise faces compliance violations. Better to ask questions now.
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Decision: OPTION B - Block & Request Documentation**
+
+**Reasoning:**
+CloudSync appears to be a shell company with nominee directors obscuring beneficial ownership. Under Wise's AML policy, transfers to unverified entities (especially potential shells) require enhanced scrutiny. I would block the $10k transfer pending documentation from Priya: (1) CloudSync's business license and financial statements, (2) Proof of legitimate business relationship (contract, invoice, PO), (3) Explanation for why she's transferring to this entity. If Priya can verify CloudSync is legitimate, we unblock. If not, we permanently decline.
+
+</details>
 
 ---
 
@@ -258,8 +308,57 @@ Almost certainly a professional nominee. This person is paid by a service compan
 - When you can't verify beneficial ownership, escalate
 
 **Challenge Questions:**
-1. If you were Priya, how would you explain your $10k transfer to CloudSync in a way that would reassure the investigator?
-2. Why would criminals use shell companies when they could just send money directly?
+
+**Challenge 1: If you were Priya, how would you explain your $10k transfer to CloudSync in a way that would reassure the investigator?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Legitimate Explanation (If Priya is honest):**
+
+"I have a genuine business relationship with CloudSync. Here's the documentation: [provides contract/PO/invoice]. I'm paying them for [specific services] as part of my normal business operations. CloudSync is a real company; I've worked with them for [X months]. Here's my communication with them [emails, invoices]. I can provide their business registration and financial information if needed."
+
+**Why This Works:**
+- Provides specific documentation (not vague explanations)
+- Names specific business purpose
+- Shows relationship history
+- Offers verification (business reg, financials)
+- Speaks to legitimacy directly
+
+**Vs. Suspicious Response:**
+- ✓ "I know the owner personally" (vague, no docs)
+- ✗ "It's a secret business arrangement" (admission of illegality)
+- ✗ "I don't have documentation" (red flag)
+- ✗ "Why do you care?" (defensive, non-cooperative)
+
+The key difference: legitimate businesses can document relationships; criminals can't.
+
+</details>
+
+**Challenge 2: Why would criminals use shell companies when they could just send money directly?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Criminals use shells because direct transfers create obvious money trails.**
+
+Direct transfer: Criminal → Victim Bank → Investigation = obvious
+
+Using shells: Criminal → Shell Company → Another Shell → Victim = confusing paper trail
+
+**Three key reasons:**
+
+1. **Create distance:** Each shell layer makes it harder to trace back to original source
+2. **Create complexity:** Investigators spend time tracing shells instead of finding criminal
+3. **Create plausibility:** Shells look like legitimate businesses (invoices, registered addresses, multiple entities)
+
+**Real Example:**
+A drug trafficker can't just send $1M to their bank account (suspicious). Instead: Drug proceeds → Fake import/export company → Shell company in Panama → Shell company in Singapore → "Consulting fee" back to trafficker's personal account. By then, investigators see "consulting business transactions" not "drug money."
+
+**This is why your job matters:**
+Every shell you identify and block = one less money laundering network in operation.
+
+</details>
 
 ---
 
