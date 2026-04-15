@@ -96,6 +96,18 @@ You've accessed OFAC's official search and documented what you found.
 **Hint:**  
 OFAC's search is slow but thorough. Lesson: Automated screening is needed!
 
+<details>
+<summary>💡 Example Task Completion (Click to reveal)</summary>
+
+**Expected Result:**
+- Search OFAC for "Putin" → Multiple results (he's under sanctions)
+- Search for "Iran" → Results showing Iranian entities/individuals under sanctions
+- Search for random name like "John Smith" → Likely no results
+
+**Why:** Putin and Iran entities are at the top of OFAC's list due to Russia/Iran sanctions. A random person typically won't be on it unless they're a known terrorist/criminal.
+
+</details>
+
 ### TODO 2: Understand Sanctions Screening in Practice
 **What to do:**  
 Read this scenario:
@@ -123,6 +135,31 @@ Your action plan includes: verify the match, check details, consult compliance, 
 **Hint:**  
 Steps should include: (1) Check the exact name on OFAC, (2) Check if it's truly a match or just a name similarity, (3) If it's a real match, block and escalate, (4) If it's not a match, allow but document why you excluded it.
 
+<details>
+<summary>💡 Example Action Plan (Click to reveal)</summary>
+
+**Strong Action Plan for Amir Khan → A.Khan in Iran:**
+
+1. **Check OFAC Directly:** Search https://sanctionslist.ofac.treas.gov/ for "A.Khan" - verify if this exact name/entity is on the list
+
+2. **Assess Name Similarity:** 
+   - Is it THE SAME person? (Same DOB, nationality, specific details match)
+   - Or just a name similarity? (Common name, different person)
+   - Red Flag: If exact match on name + Iran = likely real hit
+
+3. **Check the Transaction Logic:**
+   - Transaction: Amir (London) → A.Khan (Iran)
+   - Problem: Iran is sanctioned. ANY transaction to Iran = Red Flag regardless of name
+   - Action: Block immediately due to Iran sanctions, not waiting for name match
+
+4. **Escalate & Document:**
+   - Contact compliance team
+   - Block the transaction
+   - Document: "Blocked Iran transaction + possible OFAC match on A.Khan"
+   - File Suspicious Activity Report (SAR) if required
+
+</details>
+
 ### TODO 3: High-Risk Jurisdictions Mapping
 **What to do:**  
 Visit: https://www.fatf-gafi.org/en/publications/Mutual-Evaluations.html
@@ -140,8 +177,30 @@ Understanding WHY jurisdictions are high-risk helps you make better decisions. I
 **Validation:**  
 You've found the current FATF list and documented one country's risk factors.
 
-**Hint:**  
-High-risk countries are typically flagged for: (1) Weak corruption controls, (2) Failure to enforce AML laws, (3) Terrorist financing environment, (4) Cash-heavy underground economy.
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Strong Answer:**
+
+Current FATF High-Risk Jurisdictions often include countries with weak AML controls. Here's an example analysis:
+
+**Example Country: Syria**
+- **Why on the list:** Syria is flagged for (1) Weak corruption controls despite government claims, (2) Active terrorist organizations operating openly, (3) Underground cash economy with minimal regulation, (4) History of sanctions evasion schemes
+- **What to watch:** Any transaction to/from Syria or Syrian entities = Block immediately due to terrorist financing risk and comprehensive sanctions
+
+**Key Indicator:**
+High-risk countries have **weak or non-existent AML enforcement**. If a country doesn't actively fight money laundering, it becomes a haven for criminals. Wise doesn't operate in most high-risk jurisdictions for exactly this reason.
+
+**Real Pattern:**
+Countries on FATF Black List typically have failing grades on mandatory AML requirements like:
+- Customer Due Diligence (they don't require it)
+- Transaction reporting (they don't do it)
+- International cooperation (they don't cooperate with other countries)
+
+**Red Flag Connection:**
+If a *customer* is in a high-risk jurisdiction, they automatically need Enhanced Due Diligence (even if their name isn't sanctioned). Why? Because the jurisdiction's weak controls mean criminals operate more freely there.
+
+</details>
 
 ---
 
@@ -197,9 +256,74 @@ High-risk jurisdictions lack strong AML controls, making them attractive for lau
 - High-risk jurisdictions trigger Enhanced Due Diligence
 
 **Challenge Questions:**
-1. If your system incorrectly blocks a legitimate customer (false positive), how would you handle it?
-2. Why do you think sanctions screening is one of Wise's top compliance priorities?
-3. If a customer asks why their transaction was blocked due to sanctions, how would you explain it simply?
+
+**Challenge 1: If your system incorrectly blocks a legitimate customer (false positive), how would you handle it?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+1. **Document the false positive immediately:**
+   - Capture customer name, DOB, and OFAC list entry that matched
+   - Note differences: birthdate off by 1 year, different middle name, title variation
+
+2. **Verify it's NOT the sanctioned person:**
+   - Cross-check multiple data points: Full name, DOB, address, passport
+   - Contact customer if needed to confirm identity
+
+3. **Clear the block with documentation:**
+   - File internal "False Positive" record with evidence
+   - Remove OFAC hold and process transaction
+   - Communicate timeline to customer apologetically
+
+4. **Prevent future false positives:**
+   - Add customer to internal "cleared" list
+   - Note in profile: "Cleared false positive [date]"
+
+**Why interviewers ask this:** Shows you balance security with customer experience — both critical.
+
+</details>
+
+**Challenge 2: Why do you think sanctions screening is one of Wise's top compliance priorities?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Strong Answer:** Wise is a cross-border platform = high-risk target for sanctions evasion
+
+- **Regulatory risk:** OFAC violations cost $1B+ in fines; can lose license entirely
+- **Business risk:** One major breach shuts down US ops (existential threat)
+- **Reputational risk:** News coverage of sanctions hit destroys customer trust instantly
+- **Volume risk:** Millions of daily transfers; even 0.1% missed hits = billions in illegal funds
+
+Basically: It's not a compliance checkbox—it's existential to Wise's business model.
+
+</details>
+
+**Challenge 3: If a customer asks why their transaction was blocked due to sanctions, how would you explain it simply?**
+
+<details>
+<summary>💡 Example Answer (Click to reveal)</summary>
+
+**Customer-Facing Explanation:**
+
+"Hi [Name], we take security seriously. Your transaction was flagged because either (1) your name matched someone on a government sanctions list, or (2) the destination country is under international sanctions.
+
+This isn't personal—we do it for ALL customers. We'll review it manually within 24-48 hours. If it's a false positive, we'll unblock it. If it's a real sanctions issue, we can't process it by law.
+
+Can you confirm your full legal name, DOB, and any travel to [relevant country]? That helps us clear this up."
+
+**Why this works:**
+- Explains the law without accusation
+- Sets clear expectations
+- Offers next steps
+- Professional but human tone
+
+**Mistakes to avoid:**
+- Don't say "We suspect you of money laundering"
+- Don't promise we'll unblock it (we might not)
+- Don't go silent (worst experience + compliance risk)
+
+</details>
 
 ---
 
