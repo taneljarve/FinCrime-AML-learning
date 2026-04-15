@@ -1,0 +1,23 @@
+# AML Learning Path - .gitignore
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+node_modules/
+__pycache__/
+
+# OS files
+Thumbs.db
+
+# Build/output
+build/
+dist/
+target/
+out/
+
+# Sensitive data (never commit)
+*.env
+*.key
+secrets/
